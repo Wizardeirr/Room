@@ -19,9 +19,6 @@ abstract class ModelDataBase:RoomDatabase() {
                 return it
             }
         }
-
-
-
         private fun makeDataBase(context:Context){
             Room.databaseBuilder(context.applicationContext,ModelDataBase::class.java,"name").build()
         }

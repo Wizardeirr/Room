@@ -1,6 +1,5 @@
-package com.example.room
+package com.example.room.repo
 
-import androidx.lifecycle.LiveData
 import com.example.room.room.Model
 import com.example.room.room.ModelDao
 
