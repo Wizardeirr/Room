@@ -4,9 +4,11 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class Model(
-    @PrimaryKey
-    val uuid:Int=0,
-    val isim:String,
-    val soyisim:String
+data class Model(
+    var name : String,
+    var artistName : String,
+    var year : Int,
+    var imageUrl : String,
+    @PrimaryKey(autoGenerate = true)
+    val id : Int? = null
 )
