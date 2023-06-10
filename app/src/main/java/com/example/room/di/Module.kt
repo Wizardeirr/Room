@@ -24,11 +24,5 @@ object Module {
     @Singleton
     @Provides
     fun injectDao(database:ModelDataBase)=database.dao()
-
-    @Singleton
-    @Provides
-    fun injectRetrofitAPI(){
-        Retrofit.Builder().addCallAdapterFactory(GsonConverterFactory.create()).baseUrl()
-    }
-
+    
 }
