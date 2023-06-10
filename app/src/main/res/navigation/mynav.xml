@@ -15,4 +15,9 @@
         android:name="com.example.room.view.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/imageSearchFragment"
+        android:name="com.example.room.ImageSearchFragment"
+        android:label="fragment_image_search"
+        tools:layout="@layout/fragment_image_search" />
 </navigation>
