@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.room.R
 import com.example.room.databinding.FragmentRegisterBinding
 import com.example.room.util.BaseVBFragment
@@ -22,6 +23,13 @@ class RegisterFragment : BaseVBFragment<FragmentRegisterBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.artImageView.setOnClickListener {
+            val action=RegisterFragmentDirections.actionRegisterFragmentToImageSearchFragment()
+            findNavController().navigate(action)
+        }
+        binding.saveButton.setOnClickListener {
+
+        }
     }
 
 }

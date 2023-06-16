@@ -6,11 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.room.R
+import com.example.room.adapter.ArtRecyclerAdapter
 import com.example.room.databinding.FragmentLoginBinding
 import com.example.room.util.BaseVBFragment
+import javax.inject.Inject
 
 
-class LoginFragment : BaseVBFragment<FragmentLoginBinding>() {
+class LoginFragment @Inject constructor(
+    private val artRecyclerAdapter: ArtRecyclerAdapter
+) : BaseVBFragment<FragmentLoginBinding>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
