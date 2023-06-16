@@ -9,9 +9,9 @@ import androidx.viewbinding.ViewBinding
 
 abstract class BaseVBFragment<TViewBinding : ViewBinding> : Fragment() {
 
-    private var _binding: TViewBinding? = null
+    private var _binding: ViewBinding?=null
     protected val binding: TViewBinding
-        get() = _binding as TViewBinding
+    get() = _binding as TViewBinding
 
     abstract fun getViewBinding(): TViewBinding
 
