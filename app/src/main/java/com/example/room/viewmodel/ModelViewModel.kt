@@ -8,9 +8,10 @@ import com.example.room.repo.ModelRepositoryIF
 import com.example.room.retrofit.ImageResponse
 import com.example.room.room.Model
 import com.example.room.util.Resource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-
+@HiltViewModel
 class ModelViewModel @Inject constructor(
     private val repository:ModelRepositoryIF,
 ):ViewModel() {

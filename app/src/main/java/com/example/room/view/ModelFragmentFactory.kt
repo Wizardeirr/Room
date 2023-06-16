@@ -1,13 +1,10 @@
-package com.example.room
+package com.example.room.view
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import com.bumptech.glide.RequestManager
 import com.example.room.adapter.ArtRecyclerAdapter
 import com.example.room.adapter.ImageRecyclerAdapter
-import com.example.room.view.ImageSearchFragment
-import com.example.room.view.LoginFragment
-import com.example.room.view.RegisterFragment
 import javax.inject.Inject
 
 class ModelFragmentFactory @Inject constructor(

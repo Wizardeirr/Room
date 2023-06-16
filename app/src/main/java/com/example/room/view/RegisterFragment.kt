@@ -9,9 +9,13 @@ import androidx.navigation.fragment.findNavController
 import com.example.room.R
 import com.example.room.databinding.FragmentRegisterBinding
 import com.example.room.util.BaseVBFragment
+import com.example.room.viewmodel.ModelViewModel
+import javax.inject.Inject
 
 class RegisterFragment : BaseVBFragment<FragmentRegisterBinding>() {
-     override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var viewModel:ModelViewModel
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
@@ -28,6 +32,7 @@ class RegisterFragment : BaseVBFragment<FragmentRegisterBinding>() {
             findNavController().navigate(action)
         }
         binding.saveButton.setOnClickListener {
+
 
         }
     }
