@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.room.R
 import com.example.room.databinding.FragmentLoginBinding
 import com.example.room.util.BaseFragment
@@ -36,6 +37,8 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.fab.setOnClickListener{
+            val action=LoginFragmentDirections.actionLoginFragmentToRegisterFragment()
+            findNavController().navigate(action)
 
         }
 
